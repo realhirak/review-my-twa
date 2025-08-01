@@ -1,0 +1,26 @@
+{
+  "name": "review-my-twa",
+  "version": "1.0.0",
+  "description": "Custom in-app review popup for Trusted Web Activities (TWA)",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/realhirak/review-my-twa.git"
+  },
+  "keywords": [
+    "twa",
+    "pwa",
+    "review",
+    "popup",
+    "in-app"
+  ],
+  "author": "Hirak",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/realhirak/review-my-twa/issues"
+  },
+  "homepage": "https://github.com/realhirak/review-my-twa#readme"
+}
