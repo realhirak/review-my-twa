@@ -116,7 +116,7 @@ If you're shipping a standalone browser script via `<script>`, use the pre-built
 After installing and integrating the script:
 
 1. **Open your TWA app.**
-2. **Wait 3–4 seconds** to allow the script to fully load in the background.
+2. **Wait few seconds** to allow the script to fully load in the background.
 3. **Close the app.**
 4. **Change your device date** to 8 days in the future.
 5. **Re-launch the app.** You should now see the **Review dialog** appear automatically.
