@@ -3,6 +3,15 @@
 
 A lightweight JavaScript library that helps Trusted Web Activities (TWA) collect more Play Store reviews by showing a non-intrusive in-app review dialog. Ideal for PWA developers publishing to the Play Store using TWA.
 
+## 🧠 Features
+
+* ✅ Detects if app is running as a TWA (`isTWA`)
+* ✅ Shows a Play Store review prompt after a configurable number of days
+* ✅ Automatically show the pop-up again after 7 days when user clicks **Maybe later** or outside pop-up.
+* ✅ Simple, lightweight, and dependency-free
+* ✅ Supports light, dark, and system themes
+* ✅ Designed for real-world TWA deployment
+
 ## ✅ Prerequisites
 
 Before using **Review My TWA**, make sure your web app meets the following requirements:
@@ -102,14 +111,27 @@ If you're shipping a standalone browser script via `<script>`, use the pre-built
 </script>
 ```
 
-## 🧠 Features
+## 🧪 How to Test
 
-* ✅ Detects if app is running as a TWA (`isTWA`)
-* ✅ Shows a Play Store review prompt after a configurable number of days
-* ✅ Automatically show the pop-up again after 7 days when user clicks **Maybe later** or outside pop-up.
-* ✅ Simple, lightweight, and dependency-free
-* ✅ Supports light, dark, and system themes
-* ✅ Designed for real-world TWA deployment
+After installing and integrating the script:
+
+1. **Open your TWA app.**
+2. **Wait 3–4 seconds** to allow the script to fully load in the background.
+3. **Close the app.**
+4. **Change your device date** to 8 days in the future.
+5. **Re-launch the app.** You should now see the **Review dialog** appear automatically.
+
+### 🔧 Custom `showAfter` Scenario
+
+If you’ve manually set a custom delay like:
+
+```js
+ReviewMyTWA.showAfter(20);
+```
+
+Then, to trigger the dialog:
+
+* Set your device date **21 days into the future** before re-launching the app.
 
 ## 🛠 API Reference
 
@@ -131,7 +153,7 @@ ReviewMyTWA.setTheme("dark"); // Force dark mode
 
 If not called, it defaults to `"system"`.
 
-## 🧪 TWA Detection
+## 🕵️‍♂️ TWA Detection
 
 The script checks whether your app is running as a Trusted Web Activity. If not, the review dialog will never appear. You can use this to show different content for Web users and TWA users.
 
