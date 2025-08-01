@@ -2,7 +2,12 @@
   "name": "review-my-twa",
   "version": "1.0.0",
   "description": "Custom in-app review popup for Trusted Web Activities (TWA)",
-  "main": "index.js",
+  "main": "dist/review-my-pwa.js",                // Global usage
+  "module": "src/index.js",                       // For ESM import
+  "exports": {
+    "import": "./src/index.js",
+    "require": "./dist/review-my-pwa.js"
+  },
   "scripts": {
     "build": "esbuild src/index.js --bundle --minify --outfile=dist/review-my-pwa.js --format=iife --global-name=ReviewMyTWA",
     "test": "echo \"Error: no test specified\" && exit 1"
