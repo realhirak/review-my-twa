@@ -61,7 +61,7 @@ Include the minified version via CDN:
 
 ---
 
-### 📦 1. Install via NPM
+### 1. Install via NPM
 
 ```bash
 npm install review-my-twa
@@ -69,7 +69,7 @@ npm install review-my-twa
 
 ---
 
-### 📂 2. Usage in Your JS/TS Project
+### 2. Usage in Your JS/TS Project
 
 Import and use it inside your JavaScript or TypeScript file:
 
@@ -87,7 +87,7 @@ ReviewMyTWA.setTheme("system");
 
 ---
 
-### ⚙️ 3. Bundle Your Code
+### 3. Bundle Your Code
 
 If you're using a bundler like **Vite**, **Webpack**, or **esbuild**, everything will work out of the box.
 
