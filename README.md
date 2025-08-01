@@ -71,6 +71,7 @@ If you're shipping a standalone browser script via `<script>`, use the pre-built
 
 * ✅ Detects if app is running as a TWA (`isTWA`)
 * ✅ Shows a Play Store review prompt after a configurable number of days
+* ✅ Automatically show the pop-up again after 7 days when user clicks **Maybe later** or outside pop-up.
 * ✅ Simple, lightweight, and dependency-free
 * ✅ Supports light, dark, and system themes
 * ✅ Designed for real-world TWA deployment
