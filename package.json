@@ -4,6 +4,7 @@
   "description": "Custom in-app review popup for Trusted Web Activities (TWA)",
   "main": "index.js",
   "scripts": {
+    "build": "esbuild src/index.js --bundle --minify --outfile=dist/review-my-pwa.js --format=iife --global-name=ReviewMyTWA",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -22,5 +23,8 @@
   "bugs": {
     "url": "https://github.com/realhirak/review-my-twa/issues"
   },
-  "homepage": "https://github.com/realhirak/review-my-twa#readme"
+  "homepage": "https://github.com/realhirak/review-my-twa#readme",
+  "devDependencies": {
+    "esbuild": "^0.25.8"
+  }
 }
