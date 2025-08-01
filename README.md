@@ -117,7 +117,7 @@ window.addEventListener("reviewMyTwaReady", () => {
 
 After installing and integrating the script:
 
-1. **Open your TWA app.**
+1. **Open your TWA app or download the [test apk here](https://github.com/realhirak/twa-review/tree/main).**
 2. **Wait few seconds** to allow the script to fully load in the background.
 3. **Close the app.**
 4. **Change your device date** to 8 days in the future.
