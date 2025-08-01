@@ -47,8 +47,6 @@ Before using **Review My TWA**, make sure your web app meets the following requi
      ```
    * This allows **Review My TWA** to detect that it’s running in a **Trusted Web Activity** (TWA) context.
 
----
-
 ## 📦 Installation
 
 Include the minified version via CDN:
@@ -59,15 +57,11 @@ Include the minified version via CDN:
 
 > Paste it before closing body tag `</body>`. This script automatically checks if the app is running as a Trusted Web Activity (`isTWA`) and works only in that environment.
 
----
-
 ### 1. Install via NPM
 
 ```bash
 npm install review-my-twa
 ```
-
----
 
 ### 2. Usage in Your JS/TS Project
 
@@ -85,8 +79,6 @@ ReviewMyTWA.setTheme("system");
 
 > Make sure you're running this in a TWA environment — the dialog will **not show** otherwise.
 
----
-
 ### 3. Bundle Your Code
 
 If you're using a bundler like **Vite**, **Webpack**, or **esbuild**, everything will work out of the box.
@@ -96,7 +88,6 @@ If you're shipping a standalone browser script via `<script>`, use the pre-built
 ```html
 <script src="https://cdn.jsdelivr.net/npm/review-my-twa@1.0.1/dist/review-my-pwa.min.js"></script>
 ```
----
 
 ## 🚀 Customize
 
@@ -111,8 +102,6 @@ If you're shipping a standalone browser script via `<script>`, use the pre-built
 </script>
 ```
 
----
-
 ## 🧠 Features
 
 * ✅ Detects if app is running as a TWA (`isTWA`)
@@ -121,8 +110,6 @@ If you're shipping a standalone browser script via `<script>`, use the pre-built
 * ✅ Simple, lightweight, and dependency-free
 * ✅ Supports light, dark, and system themes
 * ✅ Designed for real-world TWA deployment
-
----
 
 ## 🛠 API Reference
 
@@ -144,8 +131,6 @@ ReviewMyTWA.setTheme("dark"); // Force dark mode
 
 If not called, it defaults to `"system"`.
 
----
-
 ## 🧪 TWA Detection
 
 The script checks whether your app is running as a Trusted Web Activity. If not, the review dialog will never appear. You can use this to show different content for Web users and TWA users.
@@ -156,21 +141,15 @@ if (ReviewMyTWA.isTWA) {
 }
 ```
 
----
-
 ## 📁 CDN Links
 
 | Version         | URL                                                                          |
 | --------------- | ---------------------------------------------------------------------------- |
 | Latest (v1.0.1) | `https://cdn.jsdelivr.net/npm/review-my-twa@1.0.1/dist/review-my-pwa.min.js` |
 
----
-
 ## 📄 License
 
 MIT © \[Hirak Kalita]
-
----
 
 ## 🙌 Contribute
 
