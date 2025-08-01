@@ -251,8 +251,8 @@ const ReviewMyTWA = (() => {
         anchors.forEach(a => {
           try {
             const url = new URL(a.href, location.origin);
-            if (!url.searchParams.has("utm_medium")) {
-              url.searchParams.set("utm_medium", "twa");
+            if (!url.searchParams.has("utm_source")) {
+              url.searchParams.set("utm_source", "twa");
               a.href = url.toString();
             }
           } catch (e) {
