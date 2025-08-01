@@ -1,5 +1,5 @@
 
-# ReviewMyTWA.js
+# Review My TWA JS
 
 A lightweight JavaScript library that helps Trusted Web Activities (TWA) collect more Play Store reviews by showing a non-intrusive in-app review dialog. Ideal for PWA developers publishing to the Play Store using TWA.
 
