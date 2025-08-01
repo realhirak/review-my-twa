@@ -102,12 +102,14 @@ If you're shipping a standalone browser script via `<script>`, use the pre-built
 
 ```html
 <script>
+window.addEventListener("reviewMyTwaReady", () => {
   // Example: Show review dialog 7 days after the user first opened your app
   ReviewMyTWA.showAfter(7);
 
   // Set theme mode (optional)
   // Options: "light", "dark", "system" (default is system if not specified)
   ReviewMyTWA.setTheme("system");
+});
 </script>
 ```
 
@@ -134,6 +136,24 @@ Then, to trigger the dialog:
 * Set your device date **21 days into the future** before re-launching the app.
 
 ## 🛠 API Reference
+
+### `reviewMyTwaReady Event Listener"
+
+Detect if Review My TWA is available before executing customization codes.
+
+```js
+window.addEventListener("reviewMyTwaReady", () => {
+
+if (ReviewMyTWA.isTWA) {
+  alert("This is a TWA");
+} else {
+  alert("This is not a TWA");
+}
+
+ReviewMyTWA.showAfter(3);
+
+});
+```
 
 ### `ReviewMyTWA.showAfter(days: number)`
 
