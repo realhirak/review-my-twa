@@ -15,6 +15,43 @@ Include the minified version via CDN:
 
 ---
 
+### 📦 1. Install via NPM
+
+```bash
+npm install review-my-twa
+```
+
+---
+
+### 📂 2. Usage in Your JS/TS Project
+
+Import and use it inside your JavaScript or TypeScript file:
+
+```js
+import ReviewMyTWA from "review-my-twa";
+
+// Show the review dialog after 7 days from first open
+ReviewMyTWA.showAfter(7);
+
+// Set the theme (light, dark, or system)
+ReviewMyTWA.setTheme("system");
+```
+
+> Make sure you're running this in a TWA environment — the dialog will **not show** otherwise.
+
+---
+
+### ⚙️ 3. Bundle Your Code
+
+If you're using a bundler like **Vite**, **Webpack**, or **esbuild**, everything will work out of the box.
+
+If you're shipping a standalone browser script via `<script>`, use the pre-built minified version instead (via CDN):
+
+```html
+<script src="https://cdn.jsdelivr.net/npm/review-my-twa@1.0.1/dist/review-my-pwa.min.js"></script>
+```
+---
+
 ## 🚀 Customize
 
 ```html
