@@ -12,7 +12,7 @@ A lightweight JavaScript library that helps Trusted Web Activities (TWA) collect
 * ✅ Supports light, dark, and system themes
 * ✅ Designed for real-world TWA deployment
 
-## ✅ Prerequisites
+## 📋 Prerequisites
 
 Before using **Review My TWA**, make sure your web app meets the following requirements:
 
