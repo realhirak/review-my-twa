@@ -3,6 +3,52 @@
 
 A lightweight JavaScript library that helps Trusted Web Activities (TWA) collect more Play Store reviews by showing a non-intrusive in-app review dialog. Ideal for PWA developers publishing to the Play Store using TWA.
 
+## ✅ Prerequisites
+
+Before using **Review My TWA**, make sure your web app meets the following requirements:
+
+1. **Digital Asset Links**
+
+   * Ensure you have a valid [Digital Asset Links](https://developer.android.com/training/app-links/verify-android-applinks) JSON file available at:
+
+     ```
+     /.well-known/assetlinks.json
+     ```
+
+2. **Web Manifest**
+
+   * Your PWA should include a valid manifest file at either of the following paths:
+
+     ```
+     /manifest.json
+     ```
+
+     or
+
+     ```
+     /manifest.webmanifest
+     ``` 
+
+3. **Start URL Parameter**
+
+   * In your **manifest file**, add a UTM parameter to the `start_url`:
+
+     ```json
+     "start_url": "/?utm_source=pwa",
+     ```
+   * This helps detect if the app is running as a regular PWA (browser install).
+
+4. **TWA Packaging Start URL**
+
+   * When packaging your app using [PWABuilder](https://www.pwabuilder.com/), [Bubblewrap](https://github.com/GoogleChromeLabs/bubblewrap), or a similar service for TWA (APK/AAB deployment), update the `start_url` to:
+
+     ```json
+     "start_url": "/?utm_source=twa",
+     ```
+   * This allows **Review My TWA** to detect that it’s running in a **Trusted Web Activity** (TWA) context.
+
+---
+
 ## 📦 Installation
 
 Include the minified version via CDN:
