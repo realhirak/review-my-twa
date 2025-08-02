@@ -4,7 +4,7 @@
 [![npm](https://img.shields.io/npm/v/review-my-twa)](https://www.npmjs.com/package/review-my-twa)
 [![jsDelivr](https://data.jsdelivr.com/v1/package/npm/review-my-twa/badge)](https://www.jsdelivr.com/package/npm/review-my-twa)
 
-A lightweight (17.6 kB) JavaScript library that helps Trusted Web Activities (TWA) collect more Play Store reviews by showing a non-intrusive in-app review dialog. Ideal for PWA developers publishing to the Play Store using TWA.
+A lightweight JavaScript library that helps Trusted Web Activities (TWA) collect more Play Store reviews by showing a non-intrusive in-app review dialog. Ideal for PWA developers publishing to the Play Store using TWA.
 
 ## 🧠 Features
 
@@ -64,7 +64,7 @@ Before using **Review My TWA**, make sure your web app meets the following requi
 Include the minified version via CDN:
 
 ```html
-<script src="https://cdn.jsdelivr.net/npm/review-my-twa@1.0.4/dist/review-my-twa.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/review-my-twa@1.0.5/dist/review-my-twa.min.js"></script>
 ```
 
 > Paste it before closing body tag `</body>`. This script automatically checks if the app is running as a Trusted Web Activity (`isTWA`) and works only in that environment.
@@ -103,7 +103,7 @@ If you're using a bundler like **Vite**, **Webpack**, or **esbuild**, everything
 If you're shipping a standalone browser script via `<script>`, use the pre-built minified version instead (via CDN):
 
 ```html
-<script src="https://cdn.jsdelivr.net/npm/review-my-twa@1.0.4/dist/review-my-twa.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/review-my-twa@1.0.5/dist/review-my-twa.min.js"></script>
 ```
 
 ## 🚀 Customize
@@ -195,7 +195,7 @@ if (ReviewMyTWA.isTWA) {
 
 | Version         | URL                                                                          |
 | --------------- | ---------------------------------------------------------------------------- |
-| Latest (v1.0.4) | `https://cdn.jsdelivr.net/npm/review-my-twa@1.0.4/dist/review-my-twa.min.js` |
+| Latest (v1.0.5) | `https://cdn.jsdelivr.net/npm/review-my-twa@1.0.5/dist/review-my-twa.min.js` |
 
 ## 📄 License
 
