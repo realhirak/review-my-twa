@@ -80,13 +80,18 @@ npm install review-my-twa
 Import and use it inside your JavaScript or TypeScript file:
 
 ```js
-import ReviewMyTWA from "review-my-twa";
+import ReviewMyTWA from 'review-my-twa';
 
-// Show the review dialog after 7 days from first open
-ReviewMyTWA.showAfter(7);
+window.addEventListener("reviewMyTwaReady", () => {
+  if (ReviewMyTWA.isTWA) {
+    console.log("This is a TWA");
+  } else {
+    console.log("This is not a TWA");
+  }
 
-// Set the theme (light, dark, or system)
-ReviewMyTWA.setTheme("system");
+  ReviewMyTWA.showAfter(7);
+  ReviewMyTWA.setTheme("system");
+});
 ```
 
 > Make sure you're running this in a TWA environment — the dialog will **not show** otherwise.
