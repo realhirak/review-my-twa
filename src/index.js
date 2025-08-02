@@ -376,8 +376,4 @@ const ReviewMyTWA = (() => {
         hideReviewDialog,
         setTheme,
       };
-
-      const readyEvent = new CustomEvent("reviewMyTwaReady");
-      window.dispatchEvent(readyEvent);
-      document.dispatchEvent(readyEvent);
     })();
