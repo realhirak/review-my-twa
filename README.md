@@ -195,7 +195,7 @@ if (ReviewMyTWA.isTWA) {
 
 | Version         | URL                                                                          |
 | --------------- | ---------------------------------------------------------------------------- |
-| Latest (v1.0.3) | `https://cdn.jsdelivr.net/npm/review-my-twa@1.0.4/dist/review-my-twa.min.js` |
+| Latest (v1.0.4) | `https://cdn.jsdelivr.net/npm/review-my-twa@1.0.4/dist/review-my-twa.min.js` |
 
 ## 📄 License
 
