@@ -377,3 +377,6 @@ const ReviewMyTWA = (() => {
         setTheme,
       };
     })();
+if (typeof window !== "undefined") {
+  window.ReviewMyTWA = ReviewMyTWA;
+}
