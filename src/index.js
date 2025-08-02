@@ -360,9 +360,11 @@ const ReviewMyTWA = (() => {
         }
         initListeners();
 
+        setTimeout(() => {
       const readyEvent = new CustomEvent("reviewMyTwaReady");
       window.dispatchEvent(readyEvent);
       document.dispatchEvent(readyEvent);
+          }, 100);
       }
 
     document.addEventListener("DOMContentLoaded", init);
@@ -377,3 +379,6 @@ const ReviewMyTWA = (() => {
       setTheme,
     };
   })();
+if (typeof window !== "undefined") {
+  window.ReviewMyTWA = ReviewMyTWA;
+}
