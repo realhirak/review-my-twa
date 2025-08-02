@@ -4,6 +4,7 @@
   "description": "Custom in-app review popup for Trusted Web Activities (TWA)",
   "main": "dist/review-my-pwa.js",
   "module": "src/index.js",
+  "types": "src/index.d.ts",
   "exports": {
     "import": "./src/index.js",
     "require": "./dist/review-my-pwa.js"
