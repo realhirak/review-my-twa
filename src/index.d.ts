@@ -6,11 +6,9 @@ export interface ReviewMyTWA {
   setTheme: (theme: 'light' | 'dark' | 'system') => void;
 }
 
-// ✅ Export as a value
 declare const ReviewMyTWA: ReviewMyTWA;
 export default ReviewMyTWA;
 
-// ✅ Attach to window (optional, for CDN users)
 declare global {
   interface Window {
     ReviewMyTWA: ReviewMyTWA;
