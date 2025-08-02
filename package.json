@@ -2,15 +2,15 @@
   "name": "review-my-twa",
   "version": "1.0.2",
   "description": "Custom in-app review popup for Trusted Web Activities (TWA)",
-  "main": "dist/review-my-pwa.js",
+  "main": "dist/review-my-twa.js",
   "module": "src/index.js",
   "types": "src/index.d.ts",
   "exports": {
     "import": "./src/index.js",
-    "require": "./dist/review-my-pwa.js"
+    "require": "./dist/review-my-twa.js"
   },
   "scripts": {
-    "build": "esbuild src/index.js --bundle --minify --outfile=dist/review-my-pwa.js --format=iife --global-name=ReviewMyTWA",
+    "build": "esbuild src/index.js --bundle --minify --outfile=dist/review-my-twa.js --format=iife --global-name=ReviewMyTWA",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -24,7 +24,7 @@
     "popup",
     "in-app"
   ],
-  "author": "Hirak",
+  "author": "Hirak Kalita",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/realhirak/review-my-twa/issues"
