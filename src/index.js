@@ -368,7 +368,9 @@ const ReviewMyTWA = (() => {
       document.addEventListener("DOMContentLoaded", init);
 
       return {
-        isTWA,
+        get isTWA() {
+              return _isTWA;
+        },
         showAfter,
         showReviewDialog,
         hideReviewDialog,
