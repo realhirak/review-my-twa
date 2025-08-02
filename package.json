@@ -10,7 +10,7 @@
     "require": "./dist/review-my-twa.js"
   },
   "scripts": {
-    "build": "esbuild src/index.js --bundle --minify --outfile=dist/review-my-twa.js --format=iife --global-name=ReviewMyTWA",
+    "build": "esbuild src/index.js --bundle --minify --outfile=dist/review-my-twa.js --format=iife",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
