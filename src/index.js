@@ -1,5 +1,5 @@
 const ReviewMyTWA = (() => {
-      function injectRTWAStyles() {
+  function injectRTWAStyles() {
         const css = `
          @import url(https://fonts.googleapis.com/css2?family=Product+Sans:wght@100;200;300;400;500;600;700;800;900&display=swap);.rtwa-header,.rtwa-popup{color:#111827;background-color:#fff}.rtwa-content,.rtwa-header,.rtwa-popup{background-color:#fff}.rtwa-popup{font-family:'Product Sans',Arial,sans-serif;width:100%;max-width:768px;border:1px solid #e5e7eb;box-shadow:0 1px 2px rgb(0 0 0 / .05);overflow:hidden;position:fixed;bottom:0;padding-bottom:10px;left:50%;transform:translateX(-50%);z-index:99999}.rtwa-header{border-bottom:1px solid #e5e7eb;padding:14px 16px;display:flex;justify-content:space-between;align-items:center}.rtwa-header-left,.rtwa-header-right{display:flex;align-items:center;gap:8px}.rtwa-header-left img,.rtwa-header-right img{width:24px;height:24px;object-fit:contain}.rtwa-header-right img{width:32px;height:32px;border-radius:9999px}.rtwa-header-left span{color:#4b5563;font-size:1.3rem;font-weight:400}.rtwa-header-right span{color:#111827;font-weight:400;font-size:1rem}.rtwa-content{padding:12px 16px;color:#111827}.rtwa-app-info{display:flex;align-items:center;gap:12px;margin-bottom:4px}.rtwa-app-icon{width:40px;height:40px;background-color:#8080801a;border-radius:8px;object-fit:contain}.rtwa-app-text{max-width:400px}.rtwa-app-text p:first-child{font-weight:500;color:#111827;font-size:1.1rem;line-height:1.25rem;margin:0}.rtwa-app-text p:last-child{font-weight:400;color:#6b7280;font-size:.95rem;line-height:1rem;margin:0;padding:6px 0 4px}.rtwa-stars{display:flex;gap:12px;margin:23px 0 30px}@media (min-width:40rem){.rtwa-popup{border-radius:10px;bottom:1rem;padding-bottom:5px;max-width:400px;left:auto;right:1rem;transform:none}.rtwa-stars{margin:14px 0 20px}}.rtwa-star-button{background:0 0;border:none;cursor:pointer;padding:0;line-height:1;width:40px;height:40px;stroke:#c3c6cc;transition:fill .2s}.rtwa-star-button svg{width:100%;height:100%;display:block}.rtwa-actions{display:flex;gap:16px}.rtwa-btn{flex:1;padding:10px 0;font-weight:600;font-size:.875rem;border-radius:.375rem;cursor:pointer;border:1px solid transparent;transition:background-color .2s}.rtwa-btn-cancel{border-color:#d1d5db;color:#047857;background-color:#fff}.rtwa-btn-cancel:hover{background-color:#e3fff0}.rtwa-btn-submit{background-color:#047857;color:#fff;border-color:#047857}.rtwa-btn-submit:hover{background-color:#065f46;border-color:#065f46}.rtwa-dark .rtwa-header,.rtwa-dark .rtwa-popup{border-color:#374151;color:#d1d5db;background-color:#1e1e1e}.text-center{text-align:center}.justify-center{justify-content:center}.pointer-events-none{pointer-events:none}.select-none{user-select:none}.rtwa-popup-backdrop{display:none;position:fixed;top:0;left:0;width:100%;height:100%;background-color:rgba(0,0,0,.5);z-index:9999}.rtwa-dark .rtwa-popup{box-shadow:0 1px 4px rgb(0 0 0 / .7)}.rtwa-dark .rtwa-app-text p:last-child,.rtwa-dark .rtwa-header-left span{color:#9ca3af}.rtwa-dark .rtwa-app-text p:first-child,.rtwa-dark .rtwa-header-right span{color:#d1d5db}.rtwa-dark .rtwa-content{background-color:#1e1e1e;color:#d1d5db}.rtwa-dark .rtwa-app-icon{background-color:#0000003d}.rtwa-dark .rtwa-star-button svg{stroke:#6b7280}.rtwa-dark .rtwa-btn-cancel{border-color:#4b5563;color:#34d399;background-color:#1e1e1e}.rtwa-dark .rtwa-btn-cancel:hover{background-color:#27272a}.rtwa-dark .rtwa-btn-submit{background-color:#059669;border-color:#059669;color:#fff}.rtwa-dark .rtwa-btn-submit:hover{background-color:#047857;border-color:#047857}.rtwa-dark .rtwa-popup-backdrop{background-color:rgba(0,0,0,.6)}
         `;
@@ -365,18 +365,15 @@ const ReviewMyTWA = (() => {
       document.dispatchEvent(readyEvent);
       }
 
-      document.addEventListener("DOMContentLoaded", init);
+    document.addEventListener("DOMContentLoaded", init);
 
-      return {
-        get isTWA() {
-              return _isTWA;
-        },
-        showAfter,
-        showReviewDialog,
-        hideReviewDialog,
-        setTheme,
-      };
-    })();
-if (typeof window !== "undefined") {
-  window.ReviewMyTWA = ReviewMyTWA;
-}
+    return {
+      get isTWA() {
+        return _isTWA;
+      },
+      showAfter,
+      showReviewDialog,
+      hideReviewDialog,
+      setTheme,
+    };
+  })();
