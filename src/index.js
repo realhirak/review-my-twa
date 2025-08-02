@@ -359,6 +359,10 @@ const ReviewMyTWA = (() => {
           showReviewDialog();
         }
         initListeners();
+
+      const readyEvent = new CustomEvent("reviewMyTwaReady");
+      window.dispatchEvent(readyEvent);
+      document.dispatchEvent(readyEvent);
       }
 
       document.addEventListener("DOMContentLoaded", init);
