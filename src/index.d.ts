@@ -8,3 +8,9 @@ export interface ReviewMyTWA {
 
 declare const ReviewMyTWA: ReviewMyTWA;
 export default ReviewMyTWA;
+
+declare global {
+  interface Window {
+    ReviewMyTWA: ReviewMyTWA;
+  }
+}
