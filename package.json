@@ -1,17 +1,16 @@
 {
   "name": "review-my-twa",
-  "version": "1.0.18",
+  "version": "1.0.19",
   "description": "Custom in-app review popup for Trusted Web Activities (TWA)",
-  "main": "dist/review-my-twa.js",             
-  "module": "dist/review-my-twa.mjs",           
-  "types": "src/index.d.ts",                    
+  "main": "dist/review-my-twa.mjs",                // Default entry point (ESM)
+  "module": "dist/review-my-twa.mjs",              // Explicit ESM entry
+  "types": "src/index.d.ts",                       // Type declarations
   "exports": {
-    "import": "./dist/review-my-twa.mjs",       
-    "require": "./dist/review-my-twa.js"       
+    "import": "./dist/review-my-twa.mjs"           // ESM-only export
   },
-  "type": "module",                            
+  "type": "module",                                // Use ESM by default
   "scripts": {
-    "build": "esbuild src/index.js --bundle --minify --outfile=dist/review-my-twa.js --format=iife --global-name=ReviewMyTWA && esbuild src/index.js --bundle --minify --outfile=dist/review-my-twa.mjs --format=esm",
+    "build": "esbuild src/index.js --bundle --minify --outfile=dist/review-my-twa.mjs --format=esm",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
