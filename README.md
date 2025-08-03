@@ -75,7 +75,7 @@ or
 <script type="module" src="https://cdn.jsdelivr.net/npm/review-my-twa@1.0.20/src/index.min.js"></script>
 ```
 
-> This script automatically checks if the app is running as a Trusted Web Activity (`isTWA`) and shows review dialog automatically if TWA detected. You can further customize the dialog through APIs mentioned below 👇.
+> This script automatically checks if the app is running as a Trusted Web Activity (`isTWA`) and shows review dialog automatically if TWA detected. You can further customize the dialog through [APIs mentioned below 👇](#-api-reference).
 
 ### 1. Install via NPM
 
