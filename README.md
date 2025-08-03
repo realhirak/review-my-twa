@@ -109,6 +109,14 @@ window.addEventListener("reviewMyTwaReady", () => {
 });
 ```
 
+Or if you want to just keep the default behaviour, simply import it in the top of your entry file, like:
+
+```js
+// In a React js project at main.tsx or jsx, just include:
+
+import 'review-my-twa';
+```
+
 > Make sure you're running this in a TWA environment — the dialog will **not show** otherwise.
 
 ### 3. Bundle Your Code
