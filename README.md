@@ -61,13 +61,21 @@ Before using **Review My TWA**, make sure your web app meets the following requi
 
 ## 📦 Installation
 
-Include the minified version via CDN:
+### Install via script tag
+
+Include the script module via CDN:
 
 ```html
-<script src="https://cdn.jsdelivr.net/npm/review-my-twa@1.0.15/dist/review-my-twa.min.js"></script>
+<script type="module">
+  import reviewMyTwa from 'https://cdn.jsdelivr.net/npm/review-my-twa@1.0.20/+esm'
+</script>
+
+or
+
+<script type="module" src="https://cdn.jsdelivr.net/npm/review-my-twa@1.0.20/src/index.min.js"></script>
 ```
 
-> Paste it before closing body tag `</body>`. This script automatically checks if the app is running as a Trusted Web Activity (`isTWA`) and works only in that environment.
+> This script automatically checks if the app is running as a Trusted Web Activity (`isTWA`) and shows review dialog automatically if TWA detected. You can further customize the dialog through APIs mentioned below 👇.
 
 ### 1. Install via NPM
 
@@ -100,10 +108,10 @@ window.addEventListener("reviewMyTwaReady", () => {
 
 If you're using a bundler like **Vite**, **Webpack**, or **esbuild**, everything will work out of the box.
 
-If you're shipping a standalone browser script via `<script>`, use the pre-built minified version instead (via CDN):
+If you're shipping via directly through the `<script>` tag, use the pre-built minified version instead (via CDN):
 
 ```html
-<script src="https://cdn.jsdelivr.net/npm/review-my-twa@1.0.15/dist/review-my-twa.min.js"></script>
+<script type="module" src="https://cdn.jsdelivr.net/npm/review-my-twa@1.0.20/src/index.min.js"></script>
 ```
 
 ## 🚀 Customize
@@ -195,7 +203,7 @@ if (ReviewMyTWA.isTWA) {
 
 | Version         | URL                                                                          |
 | --------------- | ---------------------------------------------------------------------------- |
-| Latest (v1.0.15) | `https://cdn.jsdelivr.net/npm/review-my-twa@1.0.15/dist/review-my-twa.min.js` |
+| Latest (v1.0.20) | `https://cdn.jsdelivr.net/npm/review-my-twa@1.0.20/src/index.min.js` |
 
 ## 📄 License
 
