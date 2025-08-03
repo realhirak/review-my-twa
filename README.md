@@ -9,10 +9,9 @@ A lightweight JavaScript library that helps Trusted Web Activities (TWA) collect
 ![Screenshot](assets/Screenshot_2025-08-06-15-03-24-301_com.android.chrome.png)
 
 ![Screenshot Dark](assets/Screenshot_2025-08-06-15-03-37-209_com.android.chrome.png)
-*Dark mode*
+*On Review click or star button click on our in-app dialog, user redirected to the Play Store review section*
 
 ![User redirected to Play Store review section](assets/IMG_20250803_154120.jpg)
-*On Review click or star button click on our in-app dialog, user redirected to the Play Store review section*
 
 ![Review Done](assets/Screenshot_2025-08-03-15-37-36-727_com.android.vending.png)
 *Review done* 🥳
