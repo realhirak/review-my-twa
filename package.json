@@ -1,6 +1,6 @@
 {
   "name": "review-my-twa",
-  "version": "1.0.20",
+  "version": "1.0.21",
   "description": "Custom in-app review popup for Trusted Web Activities (TWA)",
   "module": "dist/review-my-twa.mjs",
   "types": "src/index.d.ts",
