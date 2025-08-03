@@ -1,17 +1,17 @@
 {
   "name": "review-my-twa",
-  "version": "1.0.15",
+  "version": "1.0.16",
   "description": "Custom in-app review popup for Trusted Web Activities (TWA)",
-  "main": "dist/review-my-twa.js",
-  "module": "dist/review-my-twa.mjs",
-  "types": "src/index.d.ts",
+  "main": "dist/review-my-twa.js",             
+  "module": "dist/review-my-twa.mjs",           
+  "types": "src/index.d.ts",                    
   "exports": {
-    "import": "./dist/review-my-twa.mjs",
-    "require": "./dist/review-my-twa.js"
+    "import": "./dist/review-my-twa.mjs",       
+    "require": "./dist/review-my-twa.js"       
   },
-  "type": "module",
+  "type": "module",                            
   "scripts": {
-    "build": "esbuild src/index.js --bundle --minify --outfile=dist/review-my-twa.js --format=iife && esbuild src/index.js --bundle --minify --outfile=dist/review-my-twa.mjs --format=esm",
+    "build": "esbuild src/index.js --bundle --minify --outfile=dist/review-my-twa.js --format=iife --global-name=ReviewMyTWA && esbuild src/index.js --bundle --minify --outfile=dist/review-my-twa.mjs --format=esm",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -23,7 +23,9 @@
     "pwa",
     "review",
     "popup",
-    "in-app"
+    "in-app",
+    "trusted web activity",
+    "in-app review"
   ],
   "author": "Hirak Kalita",
   "license": "MIT",
