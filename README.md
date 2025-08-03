@@ -9,6 +9,7 @@ A lightweight JavaScript library that helps Trusted Web Activities (TWA) collect
 ![Screenshot](assets/Screenshot_2025-08-06-15-03-24-301_com.android.chrome.png)
 
 ![Screenshot Dark](assets/Screenshot_2025-08-06-15-03-37-209_com.android.chrome.png)
+*Dark mode*
 
 ## 🧠 Features
 
