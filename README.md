@@ -67,12 +67,8 @@ Include the script module via CDN:
 
 ```html
 <script type="module">
-  import reviewMyTwa from 'https://cdn.jsdelivr.net/npm/review-my-twa@1.0.20/+esm'
+  import reviewMyTwa from 'https://cdn.jsdelivr.net/npm/review-my-twa@1.1.0/+esm'
 </script>
-
-or
-
-<script type="module" src="https://cdn.jsdelivr.net/npm/review-my-twa@1.0.20/src/index.min.js"></script>
 ```
 
 > This script automatically checks if the app is running as a Trusted Web Activity (`isTWA`) and shows review dialog automatically if TWA detected. You can further customize the dialog through [APIs mentioned below 👇](#-api-reference).
@@ -107,12 +103,6 @@ window.addEventListener("reviewMyTwaReady", () => {
 ### 3. Bundle Your Code
 
 If you're using a bundler like **Vite**, **Webpack**, or **esbuild**, everything will work out of the box.
-
-If you're shipping via directly through the `<script>` tag, use the pre-built minified version instead (via CDN):
-
-```html
-<script type="module" src="https://cdn.jsdelivr.net/npm/review-my-twa@1.0.20/src/index.min.js"></script>
-```
 
 ## 🚀 Customize
 
@@ -198,12 +188,6 @@ if (ReviewMyTWA.isTWA) {
   // alert("Running inside TWA");
 }
 ```
-
-## 📁 CDN Links
-
-| Version         | URL                                                                          |
-| --------------- | ---------------------------------------------------------------------------- |
-| Latest (v1.0.20) | `https://cdn.jsdelivr.net/npm/review-my-twa@1.0.20/src/index.min.js` |
 
 ## 📄 License
 
