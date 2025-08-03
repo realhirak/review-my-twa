@@ -191,7 +191,7 @@ if (ReviewMyTWA.isTWA) {
 
 ## 📄 License
 
-MIT © \[Hirak Kalita]
+[MIT © \[Hirak Kalita\]](?tab=MIT-1-ov-file)
 
 ## 🙌 Contribute
 
