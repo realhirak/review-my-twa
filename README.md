@@ -6,6 +6,10 @@
 
 A lightweight JavaScript library that helps Trusted Web Activities (TWA) collect more Play Store reviews by showing a non-intrusive in-app review dialog. Ideal for PWA developers publishing to the Play Store using TWA.
 
+![Screenshot](assets/Screenshot_2025-08-06-15-03-24-301_com.android.chrome.png)
+
+![Screenshot Dark](assets/Screenshot_2025-08-06-15-03-37-209_com.android.chrome.png)
+
 ## 🧠 Features
 
 * ✅ Detects if app is running as a TWA (`isTWA`)
