@@ -2,7 +2,6 @@
   "name": "review-my-twa",
   "version": "1.0.20",
   "description": "Custom in-app review popup for Trusted Web Activities (TWA)",
-  "main": "dist/review-my-twa.mjs",
   "module": "dist/review-my-twa.mjs",
   "types": "src/index.d.ts",
   "exports": {
@@ -10,7 +9,7 @@
   },
   "type": "module",
   "scripts": {
-    "build": "esbuild src/index.js --bundle --minify --outfile=dist/review-my-twa.mjs --format=esm",
+    "build": "esbuild src/index.mjs --bundle --minify --outfile=dist/review-my-twa.mjs --format=esm",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
